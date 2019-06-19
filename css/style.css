@@ -6,9 +6,9 @@ input[type=number]:not(.browser-default):focus:not([readonly]) {
     border-bottom: 1px solid white;
 }
 
-.panel-title {
+/* .panel-title {
     color: #0198E1;
-}
+} */
 
 .bottomPicCont {
     height: 65px;
