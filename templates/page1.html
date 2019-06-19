@@ -6,25 +6,18 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>	<link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 <body>
-	<br>
-		<!-- <p align="right">
-			<img id="logo" class="logoImg" alt="foodRESCUELogo" src="images/logo3.jpg" align="left">
-			<a href="page1.html">Home</a> |
-			<a href="page2.html">About us</a> |
-			<a href="page3.html">How to use</a> |
-			<a href="page4.html">Sign in</a> |
-			<a href="page5.html">Join us</a>
-		</p> -->
 		<nav align="right">
-			<img id="logo" class="logoImg" alt="foodRESCUELogo" src="images/logo3.jpg" align="left">
-			<a href="page1.html">Home</a> |
-			<a href="page2.html">About us</a> |
-			<a href="page3.html">How to use</a> |
-			<a href="page4.html">Sign in</a> |
-			<a href="page5.html">Join us</a>
+			<img id="logo" class="logoImg" alt="foodRESCUELogo" src="/images/logo3.jpg" align="left">
+			<ul>
+				<li><a href="page1.html">Home</a></li>
+				<li><a href="page2.html">About us</a></li>
+				<li><a href="page3.html">How to use</a></li>
+				<li><a href="page4">Sign in</a></li>
+				<li><a href="page5.html">Join us</a></li>
+			</ul>
 		</nav>
 	<div class="container" id="mainContainer">
 		<div class="row" id="topRow">
@@ -34,19 +27,20 @@
 				<div>
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h3>Search for ingredients</h3>
+							<h3>Add your ingredient</h3>
 						</div>
 						<div class="panel-body">
 							<form>
 								<div class="form-group">
 									<input type="search" class="form-control" id="ingredientsSearchBar" placeholder="Ex. Banana">
 									<button type="submit" class="btn btn-default" id="ingredientsSearchBtn">Search</button>
+									<input type='search' class="" id="allergicingredient" placeholder="Ex. eggs,nuts">
 								</div>
 							</form>
 						</div>
 					</div>
 					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-					  <div class="panel panel-default">
+					  <div class="ppanel-default">
 					    <div class="panel-heading" role="tab" id="headingOne">
 					      <h4 class="panel-title">
 					        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -58,6 +52,10 @@
 					      <div class="panel-body" id="ingredients-list"></div>
 					    </div>
 					  </div>
+						<br>
+						1)Input your leftover ingredients above.
+						2)Click on go recipe to see the full recipe.
+						3)Sit back and be pleased that you have saved your leftovers!
 					</div>
 				</div>
 			</div>
@@ -69,15 +67,12 @@
 		</div>
 		<div class="row">
 			<div class="col-md-12">
-
 				<div class="panel panel-default">
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="bottomPicCont">
 			<h5>2019 Gigabite,SUTD GOOGLE CSSIx</h5>
-	</div>
 	<script src="javascript/app.js"></script>
 </body>
 </html>
