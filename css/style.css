@@ -39,10 +39,6 @@ h5 {
     background-color: #0198E1;
 }
 
-/* .btnSpace {
-    margin: 0 0 0 5px;
-} */
-
 .currentIngredient {
     font-size: 24px;
     color: #0198E1;
@@ -64,19 +60,4 @@ h5 {
 
 #ingredientsSearchBtn {
     margin-top: 5px;
-}
-
-.ingredientListBtn {
-    margin-left: 5px;
-    background-color: white;
-    color: #0198E1;
-    height: 30px;
-    border-radius: 5px;
-    border-style: none;
-    margin-bottom: 5px;
-}
-
-#output {
-    font-family: sans-serif;
-    color: #0198E1;
 }
