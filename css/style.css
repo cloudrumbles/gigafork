@@ -10,9 +10,9 @@ input[type=number]:not(.browser-default):focus:not([readonly]) {
     width: 15%;
 }
 
-.recipeButton {
+/* .recipeButton {
     margin: 0 0 0 5px;
-}
+} */
 
 #nav {
     height: 300px;
