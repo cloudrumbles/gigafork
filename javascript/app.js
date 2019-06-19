@@ -18,6 +18,21 @@ function displayRecipes() {
 		$('#recipeDisplay').html('');
 
 		for (i = 0; i < results.length; i++) {
+      // if results[i].ingredients contain allergicingredient
+        // continue
+      var recipe = results[i].recipe;
+      var display = true;
+      for (j = 0; j < results[i].recipe.ingredientLines.length; j++) {
+        var ingredient = results[i].recipe.ingredientLines[j];
+        if (ingredient.indexOf(allergicingredient) != -1){
+          display = false;
+        }
+      }
+
+      if (display == false){
+        continue
+     }
+
 			var intCalories = (results[i].recipe.calories)/(results[i].recipe.yield);
 			var calories = (Math.floor(intCalories));
 			var recipeDiv = $('<div>');
@@ -53,9 +68,12 @@ $('#ingredientsSearchBtn').on('click', function(event){
 	event.preventDefault();
 	var ingredient = $('#ingredientsSearchBar').val().trim();
 	var ingredientStr = String(ingredient);
+  var allergicingredients = $('#allergicingredient').val().trim();
+	var ingredientStr = String(ingredient);
 	ingredients.push(ingredient);
 	$('#ingredientsSearchBar').val('');
 	$('#ingredients-list').empty();
+  $('#allergicingredient'). val('');
 	displayRecipes();
 	console.log(ingredients);
 });
