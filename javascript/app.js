@@ -75,10 +75,5 @@ $(document).on('click', '.ingredientListBtn', function() {
 	if (ingredients.length >= 1) {
 	displayRecipes();
 	}
-  else {
-    // alert("Please enter at least one ingredient.");
-		// $('#numIngredients').html('0');
-		// var recipeBckGound = $('<img>').attr('src', 'images/MainPic.jpg').addClass('recipeDisplayBckGround img-responsive');
-		// $('#recipeDisplay').append(recipeBckGound);
 	};
 });
