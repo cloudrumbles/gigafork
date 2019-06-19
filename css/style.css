@@ -6,18 +6,6 @@ input[type=number]:not(.browser-default):focus:not([readonly]) {
     border-bottom: 1px solid white;
 }
 
-/* .panel-title {
-    color: #0198E1;
-} */
-
-.bottomPicCont {
-    height: 65px;
-    width: 100%;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-}
-
 .logoImg {
     width: 15%;
 }
